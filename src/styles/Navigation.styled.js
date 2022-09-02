@@ -124,6 +124,7 @@ export const UserName = styled.div`
 
     @media (max-width: 860px) {
         text-align: center;
+        font-size: 16px;
     }
 `
 
