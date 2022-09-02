@@ -44,7 +44,7 @@ const Chat = ({ users, sendMessage, activeUser }) => {
                 {messages}
                 <div ref={scrollRef}></div>
             </ChatArea>
-            <SendMessage sendMessage={sendMessage}/>
+            <SendMessage activeUser={activeUser} sendMessage={sendMessage}/>
         </StyledChat>
      );
     }
@@ -56,7 +56,7 @@ const Chat = ({ users, sendMessage, activeUser }) => {
             <ChatArea>
                 <SearchResults>Select chat</SearchResults>
             </ChatArea>
-            <SendMessage sendMessage={sendMessage} scroll={scroll}/>
+            <SendMessage activeUser={activeUser} sendMessage={sendMessage} scroll={scroll}/>
         </StyledChat>
         )
     }

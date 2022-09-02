@@ -2,7 +2,7 @@ import { useState } from "react";
 import { ChatForm, StyledForm, StyledInput, StyledSubmit, SubmitButton } from "../styles/Chat.styled";
 import sendIcon from '../assets/img/sendIcon.png'
 
-const SendMessage = ({ sendMessage }) => {
+const SendMessage = ({ sendMessage, activeUser }) => {
 
     let [message, setMessage] = useState('');
 
@@ -15,7 +15,7 @@ const SendMessage = ({ sendMessage }) => {
     return ( 
         <ChatForm>
             <StyledForm action="">
-                <StyledInput type="text" placeholder="Type your message" value={message} onChange={(e) => setMessage(e.target.value)}/>
+                <StyledInput disabled={activeUser !== undefined ? false : true}type="text" placeholder="Type your message" value={message} onChange={(e) => setMessage(e.target.value)}/>
                 <StyledSubmit type="submit" value="Send" onClick={(e) => createMessage(e, message)}/>
                 <SubmitButton  type="submit"onClick={(e) => createMessage(e, message)}>
                     <img src={sendIcon} alt="" />
