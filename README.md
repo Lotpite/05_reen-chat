@@ -5,3 +5,5 @@
   <li> Yarn start </li>
   <li> Open in http://localhost:3000 </li>
 </ol>
+
+<img src=""./src/assets/img/onlineIcon.png"/>
