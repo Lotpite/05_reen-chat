@@ -6,3 +6,4 @@
   <li> Open in http://localhost:3000 </li>
 </ol>
 
+<img src="/src/assets/img/intro/main.png" alt="intro"/>
