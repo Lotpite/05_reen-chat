@@ -3,7 +3,6 @@ import { Avatar, Main, Name, Online } from "../styles/Navigation.styled";
 import onlineIcon from "../assets/img/onlineIcon.png";
 
 const Profile = ({ avatar, name, isNavigation }) => {
-    console.log(name)
     return ( 
         <ProfileStyled isNavigation={isNavigation} isEmpty={name === undefined ? true : false}>  
             <Avatar>
